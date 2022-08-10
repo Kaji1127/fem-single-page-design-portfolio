@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, Keyboard } from 'swiper';
 import Slide1 from '../assets/image-slide-1.jpg';
 import Slide2 from '../assets/image-slide-2.jpg';
 import Slide3 from '../assets/image-slide-3.jpg';
@@ -19,11 +19,12 @@ const Works = () => {
 			<h2>My Work</h2>
 			<Swiper
 				navigation={true}
-				modules={[Navigation]}
+				modules={[Navigation, Keyboard]}
 				spaceBetween={15}
 				initialSlide={2}
 				slidesPerView={1.5}
 				centeredSlides={true}
+				keyboard={{ enabled: true }}
 				breakpoints={{
 					768: {
 						width: 768,
@@ -40,6 +41,10 @@ const Works = () => {
 					1440: {
 						width: 1440,
 						slidesPerView: 3,
+					},
+					1920: {
+						width: 1920,
+						slidesPerView: 4,
 					},
 				}}
 			>
