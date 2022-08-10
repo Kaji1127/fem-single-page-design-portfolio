@@ -1,0 +1,90 @@
+.contact {
+	margin: 0 1.6rem 4rem;
+	padding: 4.8rem 2.4rem;
+	background-color: var(--black);
+	color: var(--white);
+	border-radius: 0.8rem;
+	text-align: center;
+	display: grid;
+	gap: 2.4rem;
+}
+
+@media screen and (min-width: 36em) {
+	.contact {
+		margin: 0 3.2rem 4rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.contact {
+		margin: 0 4rem 5.6rem;
+		padding: 5.6rem 7.5rem 6.4rem;
+		gap: 2.6rem;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.contact {
+		text-align: left;
+		grid-template-columns: 1.3fr 1fr;
+		margin: 0 11.45% 5.6rem;
+		padding: 8rem 9.5rem 8rem 6.5rem;
+		align-items: center;
+		gap: 0;
+	}
+}
+
+.contact__text {
+	display: grid;
+	gap: 2.4rem;
+}
+
+@media screen and (min-width: 48em) {
+	.contact__text {
+		gap: 2.6rem;
+	}
+}
+
+.contact h2 {
+	font-size: var(--sp-heading-md);
+}
+
+@media screen and (min-width: 48em) {
+	.contact h2 {
+		font-size: var(--pc-heading-sm);
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.contact h2 {
+		font-size: var(--pc-heading-md);
+	}
+}
+
+.contact p {
+	font-size: var(--sp-body-md);
+}
+
+@media screen and (min-width: 48em) {
+	.contact p {
+		font-size: var(--pc-body-md);
+	}
+}
+
+.contact .button {
+	color: var(--white);
+	font-weight: bold;
+	background-color: var(--light-red);
+	justify-self: center;
+	transition: background-color 0.4s;
+}
+
+@media screen and (min-width: 75em) {
+	.contact .button {
+		justify-self: end;
+	}
+}
+
+.contact .button:hover {
+	background-color: var(--summer-yellow);
+}

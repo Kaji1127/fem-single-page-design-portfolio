@@ -1,0 +1,123 @@
+.about {
+	display: grid;
+	justify-content: center;
+	gap: 4rem;
+	margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 48em) {
+	.about {
+		grid-template-columns: 1fr 0.93fr;
+		justify-content: start;
+		margin-bottom: 12rem;
+		gap: 0;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about {
+		padding: 0 11.45%;
+		grid-template-columns: auto 1fr;
+		margin-bottom: 8.8rem;
+		gap: 12.5rem;
+	}
+}
+
+.about img {
+	justify-self: center;
+	width: 30rem;
+	height: 30rem;
+}
+
+@media screen and (min-width: 48em) {
+	.about img {
+		width: 36.4rem;
+		height: 36.4rem;
+		margin-right: 10rem;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about img {
+		width: 44.5rem;
+		height: 44.5rem;
+		justify-self: start;
+		margin-right: 0;
+	}
+}
+
+.about .about__text {
+	display: grid;
+	gap: 2.4rem;
+	text-align: center;
+	padding: 0 1.6rem;
+}
+
+@media screen and (min-width: 36em) {
+	.about__text {
+		padding: 0 3.2rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.about .about__text {
+		text-align: left;
+		padding-right: 4rem;
+		padding-left: 0;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about .about__text {
+		padding: 0;
+		align-self: center;
+		gap: 3.2rem;
+	}
+}
+
+.about__text h2 {
+	font-size: var(--sp-heading-md);
+	line-height: 1.25;
+}
+
+@media screen and (min-width: 48em) {
+	.about__text h2 {
+		font-size: var(--pc-heading-sm);
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about__text h2 {
+		font-size: var(--pc-heading-md);
+	}
+}
+
+.about__text p {
+	font-size: var(--sp-body-md);
+	color: var(--medium-brown);
+}
+
+@media screen and (min-width: 48em) {
+	.about__text p {
+		font-size: var(--pc-body-md);
+	}
+}
+
+.about__text .button {
+	justify-self: center;
+	color: var(--white);
+	font-weight: bold;
+	background-color: var(--light-red);
+	transition: background-color 0.4s;
+}
+
+@media screen and (min-width: 48em) {
+	.about__text .button {
+		justify-self: left;
+		align-self: baseline;
+	}
+}
+
+.about__text .button:hover {
+	background-color: var(--summer-yellow);
+}
